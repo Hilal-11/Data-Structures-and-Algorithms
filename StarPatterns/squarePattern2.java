@@ -18,12 +18,39 @@ public class squarePattern2 {
     // System.err.println();
     // }
     // }
+
     // * * * * * * *
     // * --------- *
     // * --------- *
     // * --------- *
     // * --------- *
     // * * * * * * *
+
+    // public static void patterns(int n) {
+    // for (int row = 1; row <= n; row++) {
+    // for (int col = 1; col <= n; col++) {
+    // if (row == 1 || row == n || row == n / 2 + 1 || col == 1 || col == n || col
+    // == n / 2) {
+    // System.out.print(" * ");
+    // } else {
+    // System.out.print(" ");
+    // }
+    // }
+    // System.err.println();
+    // }
+    // }
+    public static void patterns(int n) {
+        for (int row = 1; row <= n; row++) {
+            for (int col = 1; col <= n - 1; col++) {
+                if (row == n / 2 + 1 || col == n / 2 || row == 1 || row == n) {
+                    System.out.print(" * ");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.err.println();
+        }
+    }
 
     // Holo Square with Digonal Pattren
     // Holo Square with Digonal Pattren
@@ -60,6 +87,20 @@ public class squarePattern2 {
     // }
     // }
 
+    // public static void patterns(int n) {
+    // for (int row = 1; row <= n; row++) {
+    // for (int col = 1; col <= n; col++) {
+    // if (row == n - col) {
+    // System.out.print(" * ");
+
+    // } else {
+    // System.err.print(" ");
+    // }
+    // }
+    // System.err.println();
+    // }
+    // }
+
     // Cross Digional VvvImp
     // Cross Digional VvvImp
 
@@ -83,8 +124,8 @@ public class squarePattern2 {
     // public static void patterns(int n) {
     // for (int row = 1; row <= n; row++) {
     // for (int col = 1; col <= n; col++) {
-    // if (row == col || col == n - row + 1) {
-    // System.out.print(" * ");
+    // if (row == col || row == n - col + 1) {
+    // System.out.print("*");
 
     // } else {
     // System.err.print(" ");
@@ -130,7 +171,6 @@ public class squarePattern2 {
     // System.err.print(" ");
     // }
     // }
-
     // System.err.println();
     // }
     // }
@@ -157,23 +197,23 @@ public class squarePattern2 {
     // same 3 Alphabit pattern
     // same 3 Alphabit pattern
 
-    public static void patterns(int n) {
-        for (int row = 1; row <= n; row++) {
-            char ch = 'A';
-            for (int col = 1; col <= n; col++) {
-                if (row == col || col == n - row + 1) {
-                    System.out.print(" " + ch + " ");
-                    ch = (char) (ch + 1);
+    // public static void patterns(int n) {
+    // for (int row = 1; row <= n; row++) {
+    // char ch = 'A';
+    // for (int col = 1; col <= n; col++) {
+    // if (row == col || col == n - row + 1) {
+    // System.out.print(" " + ch + " ");
+    // ch = (char) (ch + 1);
 
-                } else {
-                    System.err.print(" ");
-                }
-                ch++;
-            }
+    // } else {
+    // System.err.print(" ");
+    // }
+    // ch++;
+    // }
 
-            System.err.println();
-        }
-    }
+    // System.err.println();
+    // }
+    // }
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
